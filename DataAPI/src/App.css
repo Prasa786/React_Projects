@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    border: none;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px;
+    gap: 20px
+}
+
+.navigation li {
+    cursor: pointer;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    color: aqua;
+    transition: 0.2ms;
+    cursor: pointer;
+}
+
+.navigation-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 20px;
+}
+
+.navigation-footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.navigation-footer a:hover {
+    color: #c0a0ff;
+
+}
+
+.navigation-footer li {
+    list-style: none;
+}
+
+footer address {
+    font-style: normal;
+    max-width: 250px;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+/* Hero Section */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(to right, #2196f3, #21cbf3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero input[type="text"] {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.hero button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2196f3;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: #e3f2fd;
+}
+
+.hero li {
+    background: white;
+    color: #333;
+    margin: 8px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 200px;
+    list-style: none;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: #0e1abe;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.hero button:hover {
+    background: rgb(17, 88, 107);
+}
+
+.hero button:active {
+    background: rgb(21, 111, 136);
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+
+.card {
+    padding: 20px;
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: ease-in-out;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 8px rgb(140, 163, 255);
+}
+
+footer {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+
+.footer-address {
+    font-style: normal;
+    line-height: 1.6;
+    max-width: 220px;
+    text-align: left;
+}
+
+.footer-address p {
+    margin: 2px 0;
+}
+
+.footer-address strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .about {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+}
