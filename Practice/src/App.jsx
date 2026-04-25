@@ -5,6 +5,7 @@ import Content from './components/Content'
 import Features from './components/Features'
 import Products from './components/Products'
 import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Features />
     <Products />
     <Testimonials/>
+    <Contact />
     <Footer />
    </>
   )
